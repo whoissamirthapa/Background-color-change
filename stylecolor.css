@@ -1,33 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: grey;
 }
 button{
     background-color: rgb(218, 208, 213);
     border-radius: 10px;
-    height: 30px;
-    margin: auto;
+    height: 2.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 500ms linear;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    padding: 0.8rem 1rem;
 }
 button:hover{
-    box-shadow: 2px 2px 5px rgb(71, 69, 70);
+    transform: scale(1.2,1.2);
 }
-div{
-    height: 80px;
-    width: auto;
-    background-color: rgb(226, 158, 181);
-    margin-left: 40vw;
-    margin-right: 40vw;
-    align-content: center;
-    margin-top: 50vh;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 22px;
-    border-radius: 30px;
+.container{
+    height: 90vh;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-@media screen and (max-width: 800px){
-    div{
-        margin-left: 0vw;
-        margin-right: 0vw;
-
-    }
+.content-container{
+    background-color: #999;
+    padding: 4rem;
+    border-radius: 10px;
 }
+.title_container{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.title_container + div{
+    text-align: center;
+}
+
